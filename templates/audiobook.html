@@ -1,0 +1,77 @@
+{% extends 'header.html' %}
+
+{% block title %} Welcom€ to{% endblock %}
+
+{% block head %}
+	{{ super() }}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/favicon3.ico') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center">
+    <h1 class="mb-5">👌🏿 DBT AudioB😎😇K 💪🏿¡!¡</h1>
+<!--
+    <form method="POST" action="/">
+        {{ user_input_form.hidden_tag() }} {# Include the CSRF token here #}
+        <div class="mb-3">
+            {{ user_input_form.csrf_token }} {# This is the CSRF token #}
+            <div class="mb-1 alert alert-warning" id="error-message" style="display: none;">&nbsp;
+                {{ error_message }} {# Display the error_message here #}
+            </div>
+            {{ user_input_form.user_input.label(class="mb-3 label_") }}
+            {{ user_input_form.user_input(class="form-control", id="userInput", placeholder="https://rastas-dreadlocks.3marches.com") }}
+            </div>
+        <div class="mb-3">
+            <button class="mb-5 btn" type="submit" name="start">Click to Start</button>
+        </div>
+    </form>
+-->
+    <div class="container audiobook">
+        <div class="container text-center">
+            <h3>EL PRINCIPITO<br>Antoine de Saint-Exupery</h3>
+            <h5>EL PRINCIPITO</h5>
+            <audio class="mb-3" controls>
+                <source src="{{ url_for('el_principito1') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <hr>
+        <div class="container text-center">
+            <h3>LES MISÉRABLES</h3>
+            <h5>CHAPTER I—M. MYRIEL</h5>
+            <audio class="mb-3" controls>
+                <source src="{{ url_for('miserable_chapter1') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <hr>
+        <div class="container text-center">
+            <h5>CHAPTER II—M. MYRIEL BECOMES M. WELCOME</h5>
+            <audio controls>
+                <source src="{{ url_for('miserable_chapter2') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="container clearfix gif-img">
+                <img class="left-img" src="https://media3.giphy.com/media/EyYYkV1bqr8Mo/200w.webp?cid=ecf05e475j5p26ofkesom4m641gkai259n9eou5mzkkebzns&ep=v1_gifs_search&rid=200w.webp&ct=g">
+                <!--<img class="right-img" src="https://media3.giphy.com/media/EyYYkV1bqr8Mo/200w.webp?cid=ecf05e475j5p26ofkesom4m641gkai259n9eou5mzkkebzns&ep=v1_gifs_search&rid=200w.webp&ct=g">-->
+        </div>
+    </div>
+
+<!--
+    <div class="mb-5 container">
+        <button class="btn generate-btn" type="button" onclick="playSpeech()">click to Generate Speech ¡!¡</button>
+    </div>
+</div>
+-->
+
+<!--
+<h3 class="h3_generatedText">Generated Text:</h3>
+<textarea id="generatedText" class="mb-1"></textarea>
+-->
+</div>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
