@@ -1,0 +1,45 @@
+{% extends 'header.html' %}
+
+{% block title %} Welcome to {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/favicon3.ico') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <div class="container audiobook">
+        <div class="container text-center">
+            <h3>STELLA</h3>
+            <h5>Author: Chat GPT 😝</h5>
+            <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <audio controls>
+                <source src="{{ url_for('synthesize', lang='fr', text=stella_book_speech) }}" type="audio/mpeg">
+                         Your browser does not support the audio element.
+            </audio>
+            <div class="mb-1">{{ stella_book_speech }}</div>
+            <div class="container">
+                <button type="button" class="btn btn-outline-success" id="stella-back-button">Back H😇M€ ¡!¡</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+<script>
+    // Add a click event listener to the button with the id "stella-back-button"
+    document.getElementById("stella-back-button").addEventListener("click", function() {
+        // No need to prevent default behavior
+        // Make a simple link to your Flask route for Les Miserables
+        window.location.href = "/";
+    });
+</script>
+
+{% endblock %}
+
+{% block footer %} {% endblock %}
