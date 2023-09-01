@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import URLField, SubmitField
 from wtforms.validators import InputRequired, URL
-from dictionary import el_principito_1, chapter_1, chapter_2
+from dictionary import el_principito_1, el_principito_2, chapter_1, chapter_2
 import os
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
@@ -74,11 +74,12 @@ def synthesize_speech(text, voice_id='Joanna'):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     user_input_form = UrlForm()
+    preface = el_principito_1['chapter 1']
 
     if request.method == "POST" and user_input_form.validate_on_submit():
         user_input_data = user_input_form.user_input.data.strip()
         print(f'URL: {user_input_data}')
-    return render_template('audiobook.html', year=current_year, date=current_time,
+    return render_template('audiobook.html', year=current_year, date=current_time, preface=preface,
                            user_input_form=user_input_form)
 
 
@@ -89,6 +90,26 @@ def el_principito1():
 
     # Iterate through the dictionary and generate speech for el_principito1
     for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-principito2')  # Define a unique URL path for el_principito2 audio
+def el_principito2():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_2.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:
