@@ -2,26 +2,19 @@ from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import URLField, SubmitField
 from wtforms.validators import InputRequired, URL
-from dictionary import el_principito_1, el_principito_2, chapter_1, chapter_2
+from dictionary import (el_principito_1, el_principito_2, el_principito_3, el_principito_4, el_principito_5,
+                        el_principito_6, el_principito_7, chapter_1, chapter_2)
 import os
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
 from pydub import AudioSegment
 from io import BytesIO
-import time
 from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "any-string-you-want-just-keep-it-secret"
 
 # ------------------------------------------------------ VARIABLES ----------------------------------------------------#
-time_sec = time.localtime()
-current_year = time_sec.tm_year
-# getting the current date and time
-current_datetime = datetime.now()
-# getting the time from the current date and time in the given format
-current_time = current_datetime.strftime("%a %d %B")
-
 
 # -------------------------------------------------------- CLASS ------------------------------------------------------#
 class UrlForm(FlaskForm):
@@ -48,7 +41,6 @@ polly = boto3.client('polly', region_name=region_name, aws_access_key_id=aws_acc
                      aws_secret_access_key=aws_secret_access_key)
 
 
-# Function to synthesize speech with a specified voice accent
 # Function to synthesize speech with a specified voice accent
 def synthesize_speech(text, voice_id='Joanna'):
     try:
@@ -79,8 +71,15 @@ def home():
     if request.method == "POST" and user_input_form.validate_on_submit():
         user_input_data = user_input_form.user_input.data.strip()
         print(f'URL: {user_input_data}')
-    return render_template('audiobook.html', year=current_year, date=current_time, preface=preface,
-                           user_input_form=user_input_form)
+    return render_template('audiobook.html', preface=preface, user_input_form=user_input_form,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
+@app.route('/el-p1')
+def el_principito1_page():
+    el_principito_chapter_1 = el_principito_1
+    return render_template('principito1.html', el_principito_chapter_1=el_principito_chapter_1,
+                           date=datetime.now().strftime("%a %d %B %Y"))
 
 
 @app.route('/el-principito1')  # Define a unique URL path for el_principito1 audio
@@ -103,6 +102,13 @@ def el_principito1():
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
 
 
+@app.route('/el-p2')
+def el_principito2_page():
+    el_principito_chapter_2 = el_principito_2
+    return render_template('principito2.html', el_principito_chapter_2=el_principito_chapter_2,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
 @app.route('/el-principito2')  # Define a unique URL path for el_principito2 audio
 def el_principito2():
     # Initialize an empty audiobook
@@ -123,13 +129,20 @@ def el_principito2():
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
 
 
+@app.route('/el-p3')
+def el_principito3_page():
+    el_principito_chapter_3 = el_principito_3
+    return render_template('principito3.html', el_principito_chapter_3=el_principito_chapter_3,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
 @app.route('/el-principito3')  # Define a unique URL path for el_principito1 audio
 def el_principito3():
     # Initialize an empty audiobook
     audiobook = AudioSegment.empty()
 
     # Iterate through the dictionary and generate speech for el_principito1
-    for chapter_title, chapter_text in el_principito_1.items():
+    for chapter_title, chapter_text in el_principito_3.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:
@@ -141,6 +154,13 @@ def el_principito3():
     audio_buffer.seek(0)
 
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-p4')
+def el_principito4_page():
+    el_principito_chapter_4 = el_principito_4
+    return render_template('principito4.html', el_principito_chapter_4=el_principito_chapter_4,
+                           date=datetime.now().strftime("%a %d %B %Y"))
 
 
 @app.route('/el-principito4')  # Define a unique URL path for el_principito1 audio
@@ -149,7 +169,7 @@ def el_principito4():
     audiobook = AudioSegment.empty()
 
     # Iterate through the dictionary and generate speech for el_principito1
-    for chapter_title, chapter_text in el_principito_1.items():
+    for chapter_title, chapter_text in el_principito_4.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:
@@ -161,6 +181,13 @@ def el_principito4():
     audio_buffer.seek(0)
 
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-p5')
+def el_principito5_page():
+    el_principito_chapter_5 = el_principito_5
+    return render_template('principito5.html', el_principito_chapter_5=el_principito_chapter_5,
+                           date=datetime.now().strftime("%a %d %B %Y"))
 
 
 @app.route('/el-principito5')  # Define a unique URL path for el_principito1 audio
@@ -169,7 +196,7 @@ def el_principito5():
     audiobook = AudioSegment.empty()
 
     # Iterate through the dictionary and generate speech for el_principito1
-    for chapter_title, chapter_text in el_principito_1.items():
+    for chapter_title, chapter_text in el_principito_5.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:
@@ -181,6 +208,13 @@ def el_principito5():
     audio_buffer.seek(0)
 
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-p6')
+def el_principito6_page():
+    el_principito_chapter_6 = el_principito_6
+    return render_template('principito6.html', el_principito_chapter_6=el_principito_chapter_6,
+                           date=datetime.now().strftime("%a %d %B %Y"))
 
 
 @app.route('/el-principito6')  # Define a unique URL path for el_principito1 audio
@@ -189,7 +223,7 @@ def el_principito6():
     audiobook = AudioSegment.empty()
 
     # Iterate through the dictionary and generate speech for el_principito1
-    for chapter_title, chapter_text in el_principito_1.items():
+    for chapter_title, chapter_text in el_principito_6.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:
@@ -203,13 +237,20 @@ def el_principito6():
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
 
 
+@app.route('/el-p7')
+def el_principito7_page():
+    el_principito_chapter_7 = el_principito_7
+    return render_template('principito7.html', el_principito_chapter_7=el_principito_chapter_7,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
 @app.route('/el-principito7')  # Define a unique URL path for el_principito1 audio
 def el_principito7():
     # Initialize an empty audiobook
     audiobook = AudioSegment.empty()
 
     # Iterate through the dictionary and generate speech for el_principito1
-    for chapter_title, chapter_text in el_principito_1.items():
+    for chapter_title, chapter_text in el_principito_7.items():
         # Use 'Conchita' (Spanish accent) for the voice accent
         chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
         if chapter_audio:

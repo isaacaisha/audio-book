@@ -264,6 +264,148 @@ el_principito_2 = {
         "habiendo ido a buscar una regadera de agua fresca, sirvió a la flor.",
 }
 
+el_principito_3 = {
+    "chapter 1":
+        "El principito (3) Así lo atormentó bien pronto con su vanidad un poco sombría. Un día,  por ejemplo, "
+        "hablando de las cuatro espinas, dijo al principito: —¡Ya pueden venir los tigres con sus  garras! —En mi "
+        "planeta no hay tigres —objetó el principito—; y además, los tigres no comen hierba. —Yo no soy una hierba  "
+        "—respondió suavemente la flor. —Perdóname… —No temo a los tigres, pero siento horror a las corrientes de "
+        "aire. ¿No  tendrías un biombo? «Horror a las corrientes de aire… No es una suerte para una planta —observó "
+        "el principito—. Esta  flor es bien complicada…» —Por la noche me meterás bajo un globo. Aquí hace mucho "
+        "frío. Hay pocas comodidades. Allá,  de donde vengo… Pero se interrumpió. Había venido bajo forma de semilla. "
+        "No había podido conocer nada de otros mundos. Humillada por haberse dejado sorprender en la preparación de ",
+    "chapter 2":
+        "una mentira tan ingenua, tosió dos o  tres veces para poner en falta al principito. —¿Y el biombo?… —¡Lo iba "
+        "a buscar, pero como me estabas hablando!…  Entonces la flor forzó la tos para infligirle, aun así, "
+        "remordimientos. De este modo, el principito, a pesar de la buena  voluntad de su amor, pronto dudó de ella. "
+        "Había tomado en serio palabras sin importancia y se sentía muy desgraciado.  —No debí haberla escuchado —me "
+        "confió un día—; nunca hay que escuchar a las flores. Hay que mirarlas y aspirar su  aroma. La mía perfumaba "
+        "mi planeta, pero yo no podía gozar con ello. La historia de las garras, que tanto me había  fastidiado, "
+        "debe de haberme enternecido… Y me confió aún: —No supe comprender nada entonces. Debí haberla juzgado por  ",
+    "chapter 3":
+        "sus actos y no por sus palabras. Me perfumaba y me iluminaba. ¡No debí haber huido jamás! Debí haber "
+        "adivinado su ternura, detrás de sus pobres astucias. ¡Las flores son tan contradictorias! Pero yo era "
+        "demasiado joven para saber  amarla. IX Creo que, para su evasión, aprovechó una migración de pájaros "
+        "silvestres. La mañana de la partida puso bien  en orden su planeta. Deshollinó cuidadosamente los volcanes "
+        "en actividad. Poseía dos volcanes en actividad. Era muy  cómodo para calentar el desayuno de la mañana. "
+        "Poseía también un volcán extinguido. Pero, como decía el principito:  «¡No se sabe nunca!». Deshollinó, "
+        "pues, igualmente el volcán extinguido. Si se deshollinan bien los volcanes,  arden suave y regularmente, ",
+    "chapter 4":
+        "sin erupciones. Las erupciones volcánicas son como el fuego de las chimeneas. Evidentemente,  en nuestra "
+        "tierra, somos demasiado pequeños para deshollinar nuestros volcanes. Por eso nos causan tantos  disgustos. "
+        "Deshollinó cuidadosamente los volcanes en actividad. El principito arrancó también, con un poco de "
+        "melancolía, los últimos brotes de baobabs. Creía que no iba a volver jamás. Pero todos estos trabajos "
+        "cotidianos le  parecieron extremadamente agradables esa mañana. Y cuando regó por última vez la flor, "
+        "y se dispuso a ponerla al abrigo  de su globo, descubrió que tenía deseos de llorar. —Adiós —dijo a la flor. "
+        "Pero la flor no le contestó. —Adiós  —repitió. La flor tosió. Pero no por el resfriado. —He sido tonta —le ",
+    "chapter 5":
+        "dijo por fin—. Te pido perdón. Procura ser feliz.  Quedó sorprendido por la ausencia de reproches. "
+        "Permaneció allí, desconcertado, con el globo en la mano. No  comprendía esa calma mansedumbre. —Sí, sí, "
+        "te quiero —prosiguió la flor—. No has sabido nada, por mi culpa. No tiene  importancia. Pero has sido tan "
+        "tonto como yo. Procura ser feliz… Deja el globo en paz. Ya no lo quiero. —Pero el viento…  —No estoy tan "
+        "resfriada como para… El aire fresco de la noche me hará bien. Soy una flor. —Pero los animales… —Es  preciso "
+        "que soporte dos o tres orugas si quiero conocer a las mariposas. ¡Parece que es tan hermoso! Si no, "
+        "¿quién habrá  de visitarme? Tú estarás lejos. En cuanto a los animales grandes, no les temo. Tengo mis ",
+    "chapter 6":
+        "garras. Y mostró  ingenuamente sus cuatro espinas. Después agregó: —No te detengas más, es molesto. Has "
+        "decidido partir. Vete. Pues no  quería que la viese llorar. Era una flor tan orgullosa… X Se encontraba en "
+        "la región de los asteroides 325, 326, 327, 328,  329 y 330. Comenzó, pues, a visitarlos para buscar una "
+        "ocupación y para instruirse. El primero estaba  habitado por un rey. El rey, vestido de púrpura y armiño, "
+        "estaba sentado en un trono muy sencillo y sin embargo majestuoso.  —¡Ah! He aquí un súbdito —exclamó el rey "
+        "cuando vio al principito. Y el principito se preguntó: —¿Cómo puede  reconocerme si nunca me ha visto antes? "
+        "No sabía que para los reyes el mundo está muy simplificado. Todos los hombres son  súbditos. —Acércate para ",
+    "chapter 7":
+        "que te vea mejor —le dijo el rey, que estaba orgulloso de ser al fin rey de alguien. El  principito buscó "
+        "con la mirada un lugar donde sentarse, pero el planeta estaba totalmente cubierto por el magnífico  manto de "
+        "armiño. Quedó, pues, de pie, y como estaba fatigado, bostezó. —Es contrario al protocolo bostezar en  "
+        "presencia de un rey —le dijo el monarca—. Te lo prohíbo. —No puedo evitarlo —respondió confuso el "
+        "principito—. He hecho un  largo viaje y no he dormido… —Entonces —le dijo el rey— te ordeno bostezar. No he "
+        "visto bostezar a nadie desde  hace años. Los bostezos son una curiosidad para mí. ¡Vamos!, bosteza otra vez. "
+        "Es una orden. —Eso me intimida…,  no puedo… —dijo el principito, enrojeciendo. —¡Hum! ¡Hum! —respondió el ",
+    "chapter 8":
+        "rey—. Entonces te… te ordeno bostezar o no bos…  Farfulló un poco y pareció irritado. El rey exigía "
+        "esencialmente que su autoridad fuera respetada. Y no toleraba la  desobediencia. Era un monarca absoluto. "
+        "Pero, como era muy bueno, daba órdenes razonables. «Si ordeno —decía  habitualmente—, si ordeno a un general "
+        "que se transforme en ave marina y si el general no obedece,  no será culpa del general. Será culpa mía.» "
+        "—¿Puedo sentarme? —inquirió tímidamente el principito. —Te ordeno sentarte —le  respondió el rey, "
+        "que recogió majestuosamente un faldón de su manto de armiño. El principito se sorprendió. El planeta era  "
+        "minúsculo. ¿Sobre qué podía reinar el rey? —Sire… —le dijo—, os pido perdón por interrogaros… —Te ordeno  "
+        "interrogarme —se apresuró a decir el rey. —Sire…, ¿sobre qué reináis? —Sobre todo —respondió el rey, ",
+    "chapter 9":
+        "con gran  simplicidad. —¿Sobre todo? El rey con un gesto discreto señaló su planeta, los otros planetas y "
+        "las estrellas. —¿Sobre todo eso?  —dijo el principito. —Sobre todo eso… —respondió el rey. Pues no sólo era "
+        "un monarca absoluto sino un monarca  universal. —¿Y las estrellas os obedecen? —Por supuesto —le dijo el "
+        "rey—. Obedecen al instante. No tolero la indisciplina.  Un poder tal maravilló al principito. ¡Si él lo "
+        "hubiera detentado, habría podido asistir, no a cuarenta y cuatro,  sino a setenta y dos, o aun a cien, "
+        "o aun a doscientas puestas de sol en el mismo día, sin necesidad de  mover jamás la silla! Y como se sentía "
+        "un poco triste por el recuerdo de su pequeño planeta abandonado, se atrevió a  solicitar una gracia al rey: ",
+    "chapter 10":
+        "—Quisiera ver una puesta de sol… Dame el gusto… Ordena al sol que se ponga… —Si ordeno a un general que "
+        "vuele de flor en flor como una mariposa, o que escriba una tragedia, o que se transforme en ave  marina, "
+        "y si el general no ejecuta la orden recibida, ¿quién, él o yo, estaría en falta? —Vos —dijo firmemente el  "
+        "principito. —Exacto. Hay que exigir a cada uno lo que cada uno puede hacer —replicó el rey—. La autoridad "
+        "reposa,  en primer término, sobre la razón. Si ordenas a tu pueblo que vaya a arrojarse al mar, "
+        "hará una revolución.  Tengo derecho a exigir obediencia porque mis órdenes son razonables. —¿Y mi puesta de "
+        "sol? —respondió el principito, que jamás olvidaba una pregunta una vez que la había formulado. —Tendrás tu ",
+    "chapter 11":
+        "puesta de sol. Lo exigiré. Pero  esperaré, con mi ciencia de gobernante, a que las condiciones sean "
+        "favorables. —¿Y esto cuando sucederá? —indagó el  principito. —¡Hem! ¡Hem! —le respondió el rey, "
+        "que consultó antes un grueso calendario—, ¡hem!, ¡hem!, ¡será a las…,  a las…, será esta noche a las siete y "
+        "cuarenta en punto! ¡Y verás cómo soy obedecido! El principito bostezó.  Lamentaba la pérdida de su puesta de "
+        "sol. Y como ya se aburría un poco: —No tengo nada más que hacer aquí —dijo al rey—.  ¡Voy a partir! —No "
+        "partas —respondió el rey, que estaba muy orgulloso de tener un súbdito—. ¡No partas,  te hago ministro! "
+        "—¿Ministro de qué? —De… ¡de justicia! —¡Pero no hay a quién juzgar! —No se sabe —le dijo el rey—. Todavía no ",
+    "chapter 12":
+        " he visitado mi reino. Soy muy viejo, no tengo lugar para una carroza y me fatiga caminar. —¡Oh! Pero yo ya "
+        "lo  he visto… —dijo el principito, que se asomó para echar otra mirada hacia el lado opuesto del planeta—. "
+        "No hay nadie  allí, tampoco… —Te juzgarás a ti mismo —le respondió el rey—. Es lo más difícil. Es mucho más "
+        "difícil juzgarse a  sí mismo que a los demás. Si logras juzgarte bien a ti mismo eres un verdadero sabio. "
+        "—Yo —dijo el principito— puedo  juzgarme a mí mismo en cualquier parte. No tengo necesidad de vivir aquí. "
+        "—¡Hem! ¡Hem! —dijo el rey—. Creo que en  algún lugar del planeta hay una vieja rata. La oigo por la noche. "
+        "Podrás juzgar a la vieja rata. La condenarás a muerte  de vez en cuando. Así su vida dependerá de tu ",
+    "chapter 13":
+        "justicia. Pero la indultarás cada vez para conservarla. No hay más que  una. —A mí no me gusta condenar a "
+        "muerte —respondió el principito—. Y creo que me voy. —No —dijo el rey. Pero el  principito, "
+        "habiendo concluido sus preparativos, no quiso afligir al viejo monarca: —Si Vuestra Majestad desea ser  "
+        "obedecido puntualmente podría darme una orden razonable. Podría ordenarme, por ejemplo, que parta antes de "
+        "un minuto.  Me parece que las condiciones son favorables… Como el rey no respondiera nada, el principito "
+        "vaciló un momento, y luego, con un suspiro, emprendió la partida. —Te hago embajador —se apresuró entonces a "
+        "gritar el rey. Tenía un  aire muy autoritario. Las personas grandes son bien extrañas, díjose a sí mismo el ",
+    "chapter 14":
+        "principito durante el viaje. XI El  segundo planeta estaba habitado por un vanidoso: —¡Ah! ¡Ah! ¡He aquí la "
+        "visita de un admirador! —exclamó desde lejos  el vanidoso no bien vio al principito. Pues, "
+        "para los vanidosos, los otros hombres son admiradores. —Buenos  días —dijo el principito—. ¡Qué sombrero tan "
+        "raro tienes! —Es para saludar —le respondío vanidoso—. Es para saludar  cuando me aclaman. Desgraciadamente, "
+        "nunca pasa nadie por aquí. —¿Ah, sí? —dijo el principito sin comprender. —Golpea  tus manos, una contra otra "
+        "—aconsejó el vanidoso. El principito golpeó sus manos, una contra otra. El vanidoso  saludó modestamente, "
+        "levantando el sombrero. —Esto es más divertido que la visita al rey —se dijo para sí el  principito. Y ",
+    "chapter 15":
+        "volvió a golpear sus manos, una contra otra. El vanidoso volvió a saludar, levantando el sombrero. Después  "
+        "de cinco minutos de ejercicio el principito se cansó de la monotonía del juego: —¿Y qué hay que hacer para "
+        "que el  sombrero caiga? —preguntó… Pero el vanidoso no le oyó. Los vanidosos no oyen sino las alabanzas. "
+        "—¿Me admiras mucho  verdaderamente? —preguntó al principito. —¿Qué significa admirar? —Admirar significa "
+        "reconocer que soy el  hombre más hermoso, mejor vestido, más rico y más inteligente del planeta. —¡Pero si "
+        "eres la única persona en el  planeta! —¡Dame el placer! ¡Admírame de todos modos! —Te admiro —dijo el "
+        "principito, encogiéndose de hombros—. Pero,  ¿por qué puede interesarte que te admire? Y el principito se ",
+    "chapter 16":
+        "fue. Las personas grandes son decididamente muy extrañas,  se decía para sus adentros durante el viaje. XII "
+        "El planeta siguiente estaba habitado por un bebedor. Esta visita fue muy  breve, pero sumió al principito en "
+        "una gran melancolía. —¿Qué haces ahí? —preguntó al bebedor, a quien encontró  instalado en silencio, "
+        "ante una colección de botellas vacías y una colección de botellas llenas. —Bebo —respondió el  bebedor, "
+        "con aire lúgubre. —¿Por qué bebes? —preguntóle el principito. —Para olvidar —respondió el bebedor. —¿Para  "
+        "olvidar qué? —inquirió el principito, que ya le compadecía. —Para olvidar que tengo vergüenza —confesó el "
+        "bebedor  bajando la cabeza. —¿Vergüenza de qué? —indagó el principito, que deseaba socorrerle. —¡Vergüenza "
+        "de beber!"
+}
+
+el_principito_4 = {}
+
+el_principito_5 = {}
+
+el_principito_6 = {}
+
+el_principito_7 = {}
+
 chapter_1 = {
     "Title": "LES MISÉRABLES",
     "Preface":

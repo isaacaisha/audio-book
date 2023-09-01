@@ -1,0 +1,51 @@
+{% extends 'header.html' %}
+
+{% block title %} Welcome to {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/favicon.ico') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <div class="container audiobook">
+        <div class="container text-center">
+            <h3>EL PRINCIPITO<br>Antoine de Saint-Exupery</h3>
+            <h5>EL PRINCIPITO 🔥6🔥</h5>
+            <audio class="mb-3" controls>
+                <source src="{{ url_for('el_principito6') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Loop through the values of el_principito_chapter_6 dictionary -->
+            <div class="mb-3">
+                {% for chapter_text in el_principito_chapter_6.values() %}
+                {{ chapter_text }}
+                <br>
+                {% endfor %}
+            </div>
+
+            <div class="mb-1">{{ el_principito_book_speech_6 }}</div>
+            <div class="container">
+                <button type="button" class="btn btn-outline-success" id="principito-back-button">Back H😇M€ ¡!¡</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+<script>
+    // Add a click event listener to the button with the id "principito-back-button"
+    document.getElementById("principito-back-button").addEventListener("click", function() {
+        // No need to prevent default behavior
+        // Make a simple link to your Flask route for Les Miserables
+        window.location.href = "/";
+    });
+</script>
+
+{% endblock %}
+
+{% block footer %} {% endblock %}
