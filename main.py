@@ -123,6 +123,106 @@ def el_principito2():
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
 
 
+@app.route('/el-principito3')  # Define a unique URL path for el_principito1 audio
+def el_principito3():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-principito4')  # Define a unique URL path for el_principito1 audio
+def el_principito4():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-principito5')  # Define a unique URL path for el_principito1 audio
+def el_principito5():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-principito6')  # Define a unique URL path for el_principito1 audio
+def el_principito6():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/el-principito7')  # Define a unique URL path for el_principito1 audio
+def el_principito7():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in el_principito_1.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Conchita')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
 @app.route('/miserable-chapter1')  # Define a unique URL path for miserable_chapter1 audio
 def miserable_chapter1():
     # Initialize an empty audiobook
