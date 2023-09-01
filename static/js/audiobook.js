@@ -112,8 +112,14 @@ document.getElementById("stella-button").addEventListener("click", function() {
 });
 
 // Add a click event listener to the button with the id "les-miserables-button"
-document.getElementById("les-miserables-button").addEventListener("click", function() {
+document.getElementById("miserables-button-1").addEventListener("click", function() {
     // No need to prevent default behavior
     // Make a simple link to your Flask route for Les Miserables
-    window.location.href = "/les-m-book";
+    window.location.href = "/miserables-audio-1";
+});
+// Add a click event listener to the button with the id "les-miserables-button"
+document.getElementById("miserables-button-2").addEventListener("click", function() {
+    // No need to prevent default behavior
+    // Make a simple link to your Flask route for Les Miserables
+    window.location.href = "/miserables-audio-2";
 });

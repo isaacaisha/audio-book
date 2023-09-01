@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import URLField, SubmitField
 from wtforms.validators import InputRequired, URL
 from dictionary import (el_principito_1, el_principito_2, el_principito_3, el_principito_4, el_principito_5,
-                        el_principito_6, el_principito_7, chapter_1, chapter_2)
+                        el_principito_6, el_principito_7, stella, stella_book, chapter_1, chapter_2)
 import os
 import boto3
 from botocore.exceptions import BotoCoreError, ClientError
@@ -13,6 +13,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "any-string-you-want-just-keep-it-secret"
+
 
 # ------------------------------------------------------ VARIABLES ----------------------------------------------------#
 
@@ -67,11 +68,15 @@ def synthesize_speech(text, voice_id='Joanna'):
 def home():
     user_input_form = UrlForm()
     preface = el_principito_1['chapter 1']
+    stella_prev = stella['chapter 1']
+    title = chapter_1['Title']
+    m_preface = chapter_1['Preface']
 
     if request.method == "POST" and user_input_form.validate_on_submit():
         user_input_data = user_input_form.user_input.data.strip()
         print(f'URL: {user_input_data}')
-    return render_template('audiobook.html', preface=preface, user_input_form=user_input_form,
+    return render_template('audiobook.html', preface=preface, stella_prev=stella_prev, title=title,
+                           m_preface=m_preface, user_input_form=user_input_form,
                            date=datetime.now().strftime("%a %d %B %Y"))
 
 
@@ -264,6 +269,40 @@ def el_principito7():
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
 
 
+@app.route('/stella-audio-book')
+def stella_page():
+    stella_audio_book = stella_book
+    return render_template('stella-book.html', stella_audio_book=stella_audio_book,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
+@app.route('/stella-audio')  # Define a unique URL path for el_principito1 audio
+def audio_stella():
+    # Initialize an empty audiobook
+    audiobook = AudioSegment.empty()
+
+    # Iterate through the dictionary and generate speech for el_principito1
+    for chapter_title, chapter_text in stella_book.items():
+        # Use 'Conchita' (Spanish accent) for the voice accent
+        chapter_audio = synthesize_speech(chapter_text, voice_id='Lea')
+        if chapter_audio:
+            audiobook += chapter_audio
+
+    # Export the audiobook to an in-memory buffer
+    audio_buffer = BytesIO()
+    audiobook.export(audio_buffer, format='mp3')
+    audio_buffer.seek(0)
+
+    return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/miserables-audio-1')
+def miserables_page_1():
+    miserables_audio_book = chapter_1
+    return render_template('les-m-chapter-1.html', miserables_audio_book=miserables_audio_book,
+                           date=datetime.now().strftime("%a %d %B %Y"))
+
+
 @app.route('/miserable-chapter1')  # Define a unique URL path for miserable_chapter1 audio
 def miserable_chapter1():
     # Initialize an empty audiobook
@@ -281,6 +320,13 @@ def miserable_chapter1():
     audio_buffer.seek(0)
 
     return audio_buffer.read(), 200, {'Content-Type': 'audio/mpeg'}
+
+
+@app.route('/miserables-audio-2')
+def miserables_page_2():
+    miserables_audio_book = chapter_2
+    return render_template('les-m-chapter-2.html', miserables_audio_book=miserables_audio_book,
+                           date=datetime.now().strftime("%a %d %B %Y"))
 
 
 @app.route('/miserable-chapter2')  # Define a unique URL path for miserable_chapter2 audio

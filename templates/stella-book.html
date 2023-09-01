@@ -13,14 +13,19 @@
         <div class="container text-center">
             <h3>STELLA</h3>
             <h5>Author: Chat GPT 😝</h5>
-            <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none;">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            <audio controls>
-                <source src="{{ url_for('synthesize', lang='fr', text=stella_book_speech) }}" type="audio/mpeg">
-                         Your browser does not support the audio element.
+            <audio class="mb-3" controls>
+                <source src="{{ url_for('audio_stella') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
-            <div class="mb-1">{{ stella_book_speech }}</div>
+
+            <!-- Loop through the values of el_principito_chapter_1 dictionary -->
+            <div class="mb-3" style="color:#D16CBC;">
+                {% for chapter_text in stella_audio_book.values() %}
+                {{ chapter_text }}
+                <br>
+                {% endfor %}
+            </div>
+
             <div class="container">
                 <button type="button" class="btn btn-outline-success" id="stella-back-button">Back H😇M€ ¡!¡</button>
             </div>

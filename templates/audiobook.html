@@ -31,47 +31,47 @@
         <div class="container text-center">
             <h3>EL PRINCIPITO<br>Antoine de Saint-Exupery</h3>
             <h5>EL PRINCIPITO</h5>
-            <p class="gold">{{ preface }}</p>
-            <p>€l Principito Capitulo🔥1🔥</p>
+            <span class="vert-blue">{{ preface }}</span>
+            <p>€l Principito Capitulo I:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-1"
-                        data-audiobook="/p-book-1">Principito 🔥1🔥</button>
+                        data-audiobook="/p-book-1">🔥I🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥2🔥</p>
+            <p>€l Principito Capitulo II:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-2"
-                        data-audiobook="/p-book-2">Principito 🔥2🔥</button>
+                        data-audiobook="/p-book-2">🔥II🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥3🔥</p>
+            <p>€l Principito Capitulo III:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-3"
-                        data-audiobook="/p-book-3">Principito 🔥3🔥</button>
+                        data-audiobook="/p-book-3">🔥III🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥4🔥</p>
+            <p>€l Principito Capitulo IV:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-4"
-                        data-audiobook="/p-book-4">Principito 🔥4🔥</button>
+                        data-audiobook="/p-book-4">🔥IV🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥5🔥</p>
+            <p>€l Principito Capitulo V:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-5"
-                        data-audiobook="/p-book-5">Principito 🔥5🔥</button>
+                        data-audiobook="/p-book-5">🔥V🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥6🔥</p>
+            <p>€l Principito Capitulo VI:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-6"
-                        data-audiobook="/p-book-6">Principito 🔥6🔥</button>
+                        data-audiobook="/p-book-6">🔥VI🔥</button>
             </div>
             <hr>
-            <p>€l Principito Capitulo🔥7🔥</p>
+            <p>€l Principito Capitulo VII:</p>
             <div class="container mb-1">
                 <button type="button" class="btn btn-outline-primary" id="principito-button-7"
-                        data-audiobook="/p-book-7">Principito 🔥7🔥</button>
+                        data-audiobook="/p-book-7">🔥VII🔥</button>
             </div>
 
             <hr>
@@ -105,25 +105,36 @@
                 <source src="{{ url_for('el_principito7') }}" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
--->
-        </div>
+
+        </div>-->
         <hr>
+        <div class="container">
+            <h3>STELLA</h3>
+            <h5>Author: Chat GPT 😝</h5>
+            <span class="vert-blue">{{ stella_prev }}</span>
+            <div class="container">
+                <button type="button" class="btn btn-outline-primary" id="stella-button">🔥Stella🔥</button>
+            </div>
+
+            <hr>
 
         <div class="container text-center">
             <h3>LES MISÉRABLES</h3>
             <h5>CHAPTER I—M. MYRIEL</h5>
-            <audio class="mb-3" controls>
-                <source src="{{ url_for('miserable_chapter1') }}" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <span class="vert-blue">{{ title }}</span>
+            <span class="vert-blue">{{ m_preface }}</span>
+            <p>Les Miserables Chapter I:</p>
+            <div class="container">
+                <button type="button" class="btn btn-outline-primary" id="miserables-button-1">🔥I🔥</button>
+            </div>
         </div>
         <hr>
         <div class="container text-center">
             <h5>CHAPTER II—M. MYRIEL BECOMES M. WELCOME</h5>
-            <audio controls>
-                <source src="{{ url_for('miserable_chapter2') }}" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <p>Les Miserables Chapter II:</p>
+            <div class="container">
+                <button type="button" class="btn btn-outline-primary" id="miserables-button-2">🔥II🔥</button>
+            </div>
         </div>
     </div>
 

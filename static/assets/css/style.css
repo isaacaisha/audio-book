@@ -19,6 +19,17 @@ h5 {
     #background-color: #C7C7C7;
 }
 
+p {
+    background-color: #AEFAFC;
+    border: 0.1rem solid #1295FA;
+    border-radius: 0.5rem;
+    color: #9126E8;
+}
+
+.vert-blue {
+    color:#05B6B5;
+}
+
 .gold {
     color: gold;
 }
@@ -75,7 +86,7 @@ button.mb-5.btn:hover {
 }
 */
 .gif-img {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .left-img {
