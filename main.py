@@ -30,6 +30,13 @@ class UrlForm(FlaskForm):
     submit = SubmitField()
 
 
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
+
+
 # Set AWS credentials
 # Retrieve AWS credentials and region from environment variables
 aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
