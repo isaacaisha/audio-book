@@ -5,6 +5,7 @@ from wtforms.validators import InputRequired, URL
 from dictionary import el_principito_1, chapter_1, chapter_2
 import os
 import boto3
+from botocore.exceptions import BotoCoreError, ClientError
 from pydub import AudioSegment
 from io import BytesIO
 import time
@@ -48,6 +49,7 @@ polly = boto3.client('polly', region_name=region_name, aws_access_key_id=aws_acc
 
 
 # Function to synthesize speech with a specified voice accent
+# Function to synthesize speech with a specified voice accent
 def synthesize_speech(text, voice_id='Joanna'):
     try:
         response = polly.synthesize_speech(
@@ -61,8 +63,11 @@ def synthesize_speech(text, voice_id='Joanna'):
 
         return AudioSegment.from_mp3(BytesIO(audio_data))
 
-    except Exception as e:
+    except (BotoCoreError, ClientError) as e:
         print(f"Error synthesizing speech with Polly: {str(e)}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error: {str(e)}")
         return None
 
 
